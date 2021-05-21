@@ -2,7 +2,7 @@ import boto3
 from datetime import datetime
 from datetime import timedelta
 
-session=boto3.Session(profile_name='prasad')
+session=boto3.Session(profile_name='name')
 lamdadata=session.client('lambda')
 response=lamdadata.list_functions()
 print(response)
